@@ -1,9 +1,28 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Product } from '../common/product';
+import {map} from  'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+  
+  private baseUrl = 'http://localhost:8080/api/products';
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
+
+  getProductList(): Observable<Product[]>{
+    return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
+      map(reponse => reponse._embedded.products)
+    );
+  }
+}
+
+interface GetResponse{
+  // unwraps the JSON from Spring Data Rest _embedded entry
+  _embedded: {
+       products: Product[];
+  }
 }
