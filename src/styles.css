@@ -108,8 +108,7 @@ a,a:hover{
 
 .page-wrapper{
     overflow:hidden;
-    background:#e5e5e5;
-    padding-bottom:8vh
+    padding-bottom:0vh
 }
 
 .page-container{
@@ -216,12 +215,13 @@ section{
 }
 
 .au-input-xl{
-    min-width:935px
+   
+width:900px
 }
 
 input.au-input.au-input-xl{
     border-radius:40px!important;
-    margin-right:15px
+    margin-right:-55px
 }
 
 .au-input{
@@ -269,7 +269,7 @@ input.au-input.au-input-xl{
     color:#000;
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
-    margin-left:11px
+    margin-left:15px
 }
 
 .form-header{
@@ -767,13 +767,14 @@ footer ul li a{
 }
 footer{
     background:#232324;
+    height: 45px;
     z-index:1;
     position:relative;
     text-align:center
 }
 footer li a{
     color:#313131;
-    font-weight:500
+    font-weight:500px
 }
 footer ul li{
     display:inline-block;
