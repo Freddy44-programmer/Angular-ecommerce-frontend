@@ -213,15 +213,25 @@ section{
 .section-content-p30{
     padding:0 30px
 }
+.category #dropdownMenuButton{
+
+    border-radius: 30px;
+    border:1px solid #04AA6D;
+    background:#04AA6D
+   
+}
+.category #dropdownMenuButton:hover{
+    background:#3e8e41
+}
 
 .au-input-xl{
-   
-width:900px
+height: 40px;
+width:700px;
 }
 
 input.au-input.au-input-xl{
     border-radius:40px!important;
-    margin-right:-55px
+    margin-right:-50px
 }
 
 .au-input{
@@ -251,27 +261,6 @@ input.au-input.au-input-xl{
     margin-left:15px
 }
 
-.total{
-    background:#205b8d;
-    line-height:43px;
-    color:#fff;
-    border-radius:30px;
-    border:1px solid #0da8e4;
-    float:left;
-    margin-top:7px;
-    padding-left:17px
-}
-
-.total span{
-    display:inline-block;
-    background:#fff;
-    padding:0 13px;
-    color:#000;
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
-    margin-left:15px
-}
-
 .form-header{
     display:-webkit-box;
     display:-webkit-flex;
@@ -285,15 +274,15 @@ input.au-input.au-input-xl{
     right:0;
     min-width:95px;
     color:#fff;
-    border:1px solid #205b8d;
+    border:1px solid #04AA6D;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:43px;
-    background:#205b8d
+    background:#04AA6D
 }
 
 .au-btn-submit:hover{
-    background:#05143f
+    background:#3e8e41
 }
 
 .au-btn-submit>i{
@@ -380,8 +369,13 @@ input.au-input.au-input-xl{
 }
 
 .navbar-sidebar .navbar-list li a:hover{
-    color:#0da8e4
+    color:#04AA6D
 }
+
+.navbar-sidebar h4{
+    color: #198754;
+}
+
 
 /* 
  * ----------------------------
@@ -738,7 +732,7 @@ table.table.table-bordered th{
     border-color:#0da8e4!important
 }
 a.primary-btn{
-    background:#05143f;
+    background:#04AA6D;
     padding:7px 20px;
     text-align:center;
     display:inline-block;
@@ -748,7 +742,7 @@ a.primary-btn{
     margin-top:5px
 }
 a.primary-btn:hover{
-    background:#0da8e4;
+    background:#3e8e41;
     color:#fff
 }
 
@@ -766,7 +760,7 @@ footer ul li a{
     color:#fff
 }
 footer{
-    background:#232324;
+    background:#0da8e4;
     height: 45px;
     z-index:1;
     position:relative;
@@ -1012,25 +1006,7 @@ footer ul li{
         color:#03a9f4;
         margin-left:15px
     }
-    .total span{
-        display:inline-block;
-        background:#fff;
-        padding:0 10px;
-        color:#000;
-        border-top-right-radius:20px;
-        border-bottom-right-radius:20px;
-        margin-left:6px
-    }
-    .total{
-        background:#205b8d;
-        line-height:30px;
-        color:#fff;
-        border-radius:30px;
-        border:1px solid #205b8d;
-        float:left;
-        margin-top:9px;
-        padding-left:12px
-    }
+
     .header-mobile .header-mobile-bar{
         padding:6px 0;
         background:#fff;

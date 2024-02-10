@@ -31,22 +31,32 @@
 			</div>
 			<div class="menu-sidebar-content js-scrollbar1">
 				<nav class="navbar-sidebar">
-					<ul class="list-unstyled navbar-list">
+					<h4 >Categories</h4>
+					<ul class="list-unstyled navbar-list" id="dropdownMenu">
 						<li>
-							<a href="#">Books</a>
+							<a routerLink="/category/1" routerLinkActive="active-link">Books</a>
+						</li>
+					
+						<li>
+							<a  routerLink="/category/2" routerLinkActive="active-link">Electronics</a>
 						</li>
 						<li>
-							<a href="#">Coffee Mugs</a>
+							<a href="#">Gaming & Media</a>
 						</li>
 						<li>
-							<a href="#">Mouse Pads</a>
+							<a href="#">Home & Appliances</a>
 						</li>
 						<li>
-							<a href="#">Luggage Tags</a>
+							<a href="#">Office & Stationery</a>
+						</li>
+						<li>
+							<a href="#">Toys</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
+			
+
 		</aside>
 		<!-- END MENU SIDEBAR-->
 
@@ -58,6 +68,16 @@
 				<div class="section-content section-content-p30">
 					<div class="container-fluid">
 						<div class="header-wrap">
+							<div class="category">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  Shop by Department
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								  <a href="#">Action</a>
+								  <a href="#">Another action</a>
+								  <a href="#">Something else here</a>
+								</div>
+							  </div>
 							<form class="form-header" onsubmit="return false;" method="GET">
 								<input class="au-input au-input-xl" type="text" name="search"
 									placeholder="Search for products, brands ..." />
@@ -67,8 +87,7 @@
 							</form>
 							<div class="cart-area d-n">
 								<a href="shopping-detail.html">
-									<div class="total">R19.22 <span> 2</span> </div> <i class="fa fa-shopping-cart"
-										aria-hidden="true"></i>
+									<i class="fa fa-shopping-cart"aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
@@ -79,8 +98,11 @@
 			<!-- END HEADER-->
 
 			<!-- MAIN CONTENT-->
-			
-					<app-products-list></app-products-list>
+		
+					<router-outlet></router-outlet>
+
+					<!-- The line commented below was used before Definening routers and configuring them based of our routes -->
+					<!-- <app-products-list></app-products-list> -->
 
 		    <!-- END MAIN CONTENT-->
 
