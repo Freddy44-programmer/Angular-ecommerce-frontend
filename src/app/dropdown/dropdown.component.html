@@ -1,0 +1,8 @@
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Shop by Department
+    </button>
+    <div  ngbDropdownMenu  aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+      <a class="dropdown-item" *ngFor="let option of dropdownOptions" [routerLink]="option.route" routerLinkActive="active">{{ option.label}}</a>
+    </div>
+  </div>

@@ -5,6 +5,7 @@ import { ProductsListComponent } from './componets/products-list/products-list.c
 import {HttpClientModule} from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { Routes, RouterModule, Router } from '@angular/router';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 const routes: Routes = [
  {path: 'category/:id', component: ProductsListComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    DropdownComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
