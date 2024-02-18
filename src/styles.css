@@ -718,6 +718,58 @@ table.table.table-bordered th{
 .detail-section{
     margin-top:60px
 }
+  
+  .card {
+    width: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+
+  }
+
+
+  .card-img-top {
+    width: 100%; 
+    height: auto; 
+    object-fit:cover; 
+  }
+
+    
+  .card-title {
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    
+  }
+
+  .card-text {
+    font-size: 18px; 
+    color: #333; 
+    font-weight: bold;
+  }
+
+  
+  .card-title:hover::after {
+    content: attr(title);
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  
+
 /**/
 
 /* 
@@ -728,9 +780,11 @@ table.table.table-bordered th{
 
  .btn-info{
     color:#fff;
-    background-color:#0da8e4!important;
-    border-color:#0da8e4!important
+    background-color:#04AA6D!important;
+    border-color:#04AA6D!important
 }
+
+
 a.primary-btn{
     background:#04AA6D;
     padding:7px 20px;
@@ -859,8 +913,11 @@ footer ul li{
         justify-content:center
     }
      .au-input-xl{
-        min-width:350px
+        min-width:350px;
+      
     }
+
+  
       .logo{
         text-align:center
     }
@@ -896,6 +953,15 @@ footer ul li{
         -moz-box-shadow:0 5px 10px 0 rgba(0,0,0,.1);
         box-shadow:0 5px 10px 0 rgba(0,0,0,.1)
     }
+
+    
+    .header-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
      .header-desktop2{
         left:0;
         position:relative
@@ -928,7 +994,8 @@ footer ul li{
 
 @media (max-width:767px){
       .au-input-xl{
-        min-width:150px
+        min-width:150px;
+       
     }
     .header-button-item{
         font-size:22px;
@@ -954,10 +1021,27 @@ footer ul li{
         position:relative;
         top:0;
         left:0;
-        height:80px
+        height:80px;
+        padding: 10px 0;
     }
     a.logo img{
         width:110px
+    }
+
+    .header-wrap {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .category,
+    .form-header,
+    .cart-area {
+        margin-bottom: 10px; 
+    }
+
+    .au-input {
+        width: 100%; 
+        border-radius:50%;
     }
 
     .cart-area i{
@@ -983,16 +1067,19 @@ footer ul li{
         right:10px;
         min-width:85px;
         color:#fff;
-        border:1px solid #205b8d;
+        border:1px solid #04AA6D;
         -webkit-border-radius:3px;
         -moz-border-radius:3px;
-        border-radius:0;
-        background:#205b8d
+        border-radius:40px!important;
+        background: #04AA6D
     }
     input.au-input.au-input-xl{
-        border-radius:0!important;
-        margin-right:0
+    
+        border-radius:40px!important;
+        margin-right:-20px
     }
+
+
     .cart-area.d-b{
         display:block
     }
