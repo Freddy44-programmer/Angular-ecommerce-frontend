@@ -254,12 +254,42 @@ input.au-input.au-input-xl{
 }
 
 .cart-area i{
-    font-size:22px;
+    font-size:20px;
     float:left;
-    margin-top:16px;
+    margin-top:20px;
     color:#fff;
-    margin-left:15px
 }
+
+.cart-area .fa-heart{
+    margin-right: 10px;
+}
+
+.wish-list{
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.cart-container {
+    display: inline-block;
+    padding: 1px;
+    background-color: #04AA6D;
+    border:40%;
+    border-radius: 50%;
+    width: 60px;
+    padding-left: 12px;
+    
+}
+
+
+
+.total{
+    line-height:60px;
+    color:#fff;
+    float:left;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
 
 .form-header{
     display:-webkit-box;
@@ -730,37 +760,56 @@ table.table.table-bordered th{
 
 .detail-content {
     display: flex;
-    margin-top:10%;
-    margin-bottom: 5%;
+    margin-top:12%;
+    margin-bottom: 15%;
     flex-wrap: wrap;
+    background-color:whitesmoke;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .detail-img {
-    max-width: 100%; 
-    max-height: 70vh; 
+    max-width:100%; 
+    max-height: 50vh; 
     width: auto;
     height: auto; 
     margin-right: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
 }
 
 .detail-info {
     flex: 1;
+    padding-right: 3px;
+    padding-top: 10px;
 }
 
+.btn-outline-primary{
+    margin-top: 10px;
+    width: 215px;
+}
+
+.btn-outline-success{
+    width: 215px;
+    
+}
 
   
   .card {
-    width: 95%;
+    width: 90%;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: auto;
-
+     
   }
 
   .img-responsive{
-    width: 100%;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 12px;
   }
 
 
@@ -1031,6 +1080,7 @@ footer ul li{
     .detail-section {
         flex-direction: column; 
         align-items: flex-start; 
+
     }
     
     .detail-img {

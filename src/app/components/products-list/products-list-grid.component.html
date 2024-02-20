@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- loop over the collection of products -->
-        <div class="col-sm-3" *ngFor="let tempProduct of products">
+        <div class="col-lg-3" *ngFor="let tempProduct of products">
           <div class="card">
             <a routerLink="/products/{{tempProduct.id}}">
               <img  [src]="tempProduct.imageUrl" class="img-responsive" />
@@ -13,7 +13,7 @@
               <a routerLink="/products/{{tempProduct.id}}">
               <h5 class="card-title" [title]="tempProduct.name">
                 {{
-                  tempProduct.name.length > 32? tempProduct.name.slice(0, 32) + "...": tempProduct.name
+                  tempProduct.name.length > 30? tempProduct.name.slice(0, 30) + "...": tempProduct.name
                 }}
               </h5>
             </a>
@@ -41,6 +41,29 @@
           <p>Please check your spelling or try a more generic search term.</p>
         </div>
       </div>
+
+           <!--begin footer-->
+           <div class="footer-pagination">
+             <div class="row">
+              <div class="col-md-6"></div>
+
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-9" style=" padding-left: 30%">
+                     <!-- <ngb-pagination [(page)]="thePageNumber"
+                                     [pageSize]="thePageSize"
+                                     [collectionSize]="theTotalElements"
+                                     (pageChange)="listProducts()">
+
+                     </ngb-pagination> -->
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+
+            <!--end footer-->
+
     </div>
   </div>
 </div>
