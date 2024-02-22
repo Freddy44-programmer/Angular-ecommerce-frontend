@@ -249,45 +249,66 @@ input.au-input.au-input-xl{
     transition:all .5s ease
 }
 
-.cart-area.d-n{
-    display:block
+.cart-dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.cart-area i{
-    font-size:20px;
+.cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.cart-link:hover {
+    text-decoration: underline;
+}
+
+.cart-link i {
+    font-size: 20px;
+    margin-right: 5px;
     float:left;
-    margin-top:20px;
     color:#fff;
 }
 
-.cart-area .fa-heart{
-    margin-right: 10px;
+.cart-details {
+    position: absolute;
+    top: 100%;
+    left: -320px;
+    width: 350px;
+    height: 300px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 1px;
+    display: none;
+}
+
+.cart-dropdown:hover .cart-details {
+    display: block;
+}
+
+.cart-details p {
+    margin: 5px 0;
+    margin-left: 10px;
 }
 
 .wish-list{
-    display: inline-block;
-    margin-bottom: 22px;
-}
-
-.cart-container {
-    display: inline-block;
-    padding: 1px;
-    background-color: #04AA6D;
-    border:40%;
-    border-radius: 50%;
-    width: 60px;
-    padding-left: 12px;
-    
+ display: inline-block;
+   margin-right: 8px;
 }
 
 
-
-.total{
+.total {
     line-height:60px;
     color:#fff;
     float:left;
-    font-size: 20px;
-    margin-left: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 2px;
 }
 
 

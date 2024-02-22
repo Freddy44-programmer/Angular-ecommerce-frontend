@@ -21,7 +21,7 @@
               <p class="card-text">
                 Price: {{ tempProduct.unitPrice | currency : "R" }}
               </p>
-              <button href="#" class="btn btn-outline-success">
+              <button (click)="addToCart(tempProduct)" class="btn btn-outline-success">
                 +
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 Add to cart
