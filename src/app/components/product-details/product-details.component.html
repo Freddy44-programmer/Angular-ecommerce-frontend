@@ -11,7 +11,7 @@
                 <div class="price">{{product.unitPrice | currency:'R'}}</div>
 
                 <div class="detail-btn">
-                    <button href="#" class="btn btn-outline-success">
+                    <button (click)="addToCart()" class="btn btn-outline-success"  >
                         +
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         Add to cart
